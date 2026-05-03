@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Strategy Report: AI Trade Pro V5.0.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#020617',
+                            800: '#0f172a',
+                            700: '#1e293b',
+                        },
+                        cyan: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                        },
+                        accent: '#6366f1',
+                    },
+                    fontFamily: {
+                        display: ['Montserrat', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #22d3ee 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-shadow {
+            box-shadow: 0 0 30px rgba(34, 211, 238, 0.15);
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.3), transparent);
+        }
+        p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-cyan-500/30">
+
+    <!-- Background Elements -->
+    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-accent/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full glass-card border-none rounded-none border-b border-white/5 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-accent rounded-xl flex items-center justify-center shadow-lg animate-pulse-slow">
+                    <span class="text-white font-bold text-xl">AI</span>
+                </div>
+                <div>
+                    <h1 class="font-display font-extrabold text-lg tracking-tight uppercase">AI Marketing</h1>
+                </div>
+            </div>
+            <nav>
+                <a href="www.phamhoanganhtokens.com" target="_blank" class="text-sm font-medium hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2 group">
+                    www.phamhoanganhtokens.com
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 md:py-20 space-y-16">
+        
+        <!-- Hero Section -->
+        <section class="text-center space-y-6">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-4 animate-bounce">
+                MARKETING STRATEGY REPORT
+            </div>
+            <h1 class="font-display text-4xl md:text-6xl font-extrabold leading-tight">
+                BÁO CÁO CHIẾN LƯỢC: <br/>
+                <span class="text-gradient">AI TRADE PRO V5.0.0</span>
+            </h1>
+            <div class="flex flex-wrap justify-center gap-6 pt-4 text-sm font-medium text-slate-400">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    03/05/2026
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    Đội ngũ AI Marketing
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Section 1: Overview -->
+        <section class="scroll-reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-display font-black text-white/10 italic">01</span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold border-l-4 border-cyan-500 pl-4 uppercase">
+                    Tổng Quan Hệ Thống Đột Phá
+                </h2>
+            </div>
+            <div class="glass-card p-8 space-y-6">
+                <p class="text-slate-300">
+                    Trong bối cảnh thị trường tài chính toàn cầu năm 2026 đầy biến động, <strong>AI Trade Pro V5.0.0</strong> được định vị như một hệ sinh thái trí tuệ nhân tạo toàn diện, không chỉ dừng lại ở một công cụ giao dịch thông thường. Được phát triển bởi AI Marketing, phiên bản v5.0.0 đánh dấu bước tiến vượt bậc với việc ứng dụng công nghệ <strong>Multi-AI Agent</strong>, mang lại cho các nhà đầu tư cá nhân sức mạnh phân tích vốn dĩ trước đây chỉ dành riêng cho các quỹ đầu cơ hàng đầu thế giới. 🌐
+                </p>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10 text-center">
+                        <div class="text-cyan-400 text-2xl mb-2 font-bold tracking-tighter">GOLD</div>
+                        <div class="text-xs text-slate-400 uppercase">Kim loại quý</div>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10 text-center">
+                        <div class="text-cyan-400 text-2xl mb-2 font-bold tracking-tighter">OIL</div>
+                        <div class="text-xs text-slate-400 uppercase">Năng lượng</div>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10 text-center">
+                        <div class="text-cyan-400 text-2xl mb-2 font-bold tracking-tighter">BITCOIN</div>
+                        <div class="text-xs text-slate-400 uppercase">Tài sản số</div>
+                    </div>
+                </div>
+                <p class="text-slate-300">
+                    Sản phẩm tập trung vào phân khúc cao cấp, hướng tới ba thị trường có tính thanh khoản và biến động mạnh nhất. Với triết lý "Lợi nhuận đến từ sự minh bạch", AI Trade Pro V5.0.0 giải quyết bài toán niềm tin bằng cách không chỉ đưa ra lệnh giao dịch mà còn cung cấp lời giải thích chi tiết cho từng quyết định. 📈
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: Core Tech - Bento Grid -->
+        <section class="scroll-reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-display font-black text-white/10 italic">02</span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold border-l-4 border-accent pl-4 uppercase">
+                    Công Nghệ Lõi: Multi-AI Agent System
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Agent 1 -->
+                <div class="glass-card p-6 border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-2xl">📰</span>
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-3">News Agent</h3>
+                    <p class="text-sm text-slate-400">Quét hàng triệu nguồn dữ liệu (Reuters, Bloomberg) để phân tích tâm lý thị trường và dịch chuyển địa chính trị trong mili giây.</p>
+                </div>
+                <!-- Agent 2 -->
+                <div class="glass-card p-6 border-accent/20 hover:border-accent/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-3">Technical Agent</h3>
+                    <p class="text-sm text-slate-400">Sử dụng Deep Learning để nhận diện mô hình giá, vùng cung cầu và xung lượng trên đa khung thời gian với độ chính xác tuyệt đối.</p>
+                </div>
+                <!-- Agent 3 -->
+                <div class="glass-card p-6 border-red-500/20 hover:border-red-500/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-3">Risk Agent</h3>
+                    <p class="text-sm text-slate-400">Chốt chặn an toàn, tính toán tỷ lệ R/R, quản lý khối lượng lệnh và bảo vệ vốn trước những cú "quét" bất ngờ.</p>
+                </div>
+                <!-- Agent 4 -->
+                <div class="glass-card p-6 border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-2xl">🧠</span>
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-3">Synthesis Agent</h3>
+                    <p class="text-sm text-slate-400">Bộ não trung tâm đối soát dữ liệu từ 3 Agent còn lại. Chỉ thực thi lệnh khi đạt được sự đồng thuận cao nhất.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: USP -->
+        <section class="scroll-reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-display font-black text-white/10 italic">03</span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold border-l-4 border-cyan-500 pl-4 uppercase">
+                    Điểm Bán Hàng Độc Nhất (USPs)
+                </h2>
+            </div>
+            <div class="glass-card overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-8 md:p-12 space-y-6">
+                        <p class="text-slate-300">
+                            Minh bạch là tôn chỉ hành động của AI Trade Pro V5.0.0. Không giống các hệ thống "hộp đen" truyền thống, sản phẩm cung cấp <strong>Transparent Logs</strong>, nơi mỗi lệnh vào đều đi kèm giải thích chi tiết: "Tại sao mua?", "Tại sao bán?" dựa trên dữ liệu cụ thể. 📜
+                        </p>
+                        <p class="text-slate-300">
+                            Hệ thống được tối ưu đặc biệt cho các cặp tài sản chiến lược. Với Vàng và Dầu, AI nắm bắt nhịp đập kinh tế vĩ mô; với Bitcoin, nó sử dụng thuật toán theo dõi dòng tiền lớn (Smart Money). Điều này mang lại sự an tâm tuyệt đối và giá trị thực thể, giúp khách hàng không chỉ có lợi nhuận mà còn làm chủ công nghệ. ✨
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 bg-gradient-to-br from-navy-800 to-navy-900 p-8 flex items-center justify-center border-t md:border-t-0 md:border-l border-white/10">
+                        <div class="space-y-4 w-full">
+                            <div class="bg-white/5 p-4 rounded-lg border-l-2 border-cyan-500">
+                                <span class="text-xs font-bold text-cyan-400 block mb-1">TRANSPARENCY</span>
+                                <span class="text-sm italic">"Entering BUY Order @ 2350.2 - News Sentiment: Bullish (85%) - Technical: Bullish Engulfing H4"</span>
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-lg border-l-2 border-accent opacity-60">
+                                <span class="text-xs font-bold text-accent block mb-1">REAL-TIME DATA</span>
+                                <span class="text-sm">Processing volatility clusters...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infographic Section -->
+        <section class="scroll-reveal space-y-8 py-10">
+            <div class="text-center space-y-4">
+                <h2 class="text-2xl md:text-4xl font-display font-bold uppercase">Chiến Lược Hình Ảnh Trực Quan</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Mô hình hóa hệ sinh thái AI Marketing và lộ trình triển khai chiến lược cho phiên bản V5.0.0</p>
+            </div>
+            
+            <div class="relative group">
+                <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-accent/20 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div class="relative glass-card p-4 md:p-8 glow-shadow">
+                    <img src="https://opal.google/board/blobs/172615a9-090b-4c0b-891e-712358d775de" alt="AI Trade Pro V5.0.0 Marketing Strategy Infographic" class="w-full h-auto rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Phase 3 Strategy -->
+        <section class="scroll-reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-display font-black text-white/10 italic">04</span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold border-l-4 border-red-500 pl-4 uppercase">
+                    Chiến Lược Phát Hành Phase 3
+                </h2>
+            </div>
+            <div class="relative glass-card p-8 md:p-12 border-red-500/20 overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4">
+                    <span class="text-5xl opacity-20 group-hover:scale-125 transition-transform duration-500">💎</span>
+                </div>
+                <div class="max-w-2xl space-y-6">
+                    <h3 class="text-xl font-bold text-red-400 uppercase tracking-widest">Độc quyền & Khan hiếm</h3>
+                    <p class="text-slate-300">
+                        Để đảm bảo việc hỗ trợ tối ưu và sự ổn định tuyệt đối của hệ thống, AI Marketing giới hạn lượt đăng ký cho Phase 3 ở con số <strong>duy nhất 50 suất</strong>. Chiến lược này ưu tiên chất lượng hơn số lượng, hướng tới các nhà đầu tư tìm kiếm công cụ chuyên nghiệp, bền vững và đẳng cấp.
+                    </p>
+                    <p class="text-slate-300">
+                        Chiến dịch marketing sẽ tập trung vào sự tinh tế và sang trọng trong thông điệp, không hứa hẹn lợi nhuận ảo. Trọng tâm là trình diễn "tư duy" của AI, biến mỗi giao dịch thành một trải nghiệm công nghệ tương lai. 🚀
+                    </p>
+                    <div class="pt-6">
+                        <button class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-accent rounded-full font-bold text-white hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] transition-all transform hover:-translate-y-1 active:scale-95">
+                            NHẬN TƯ VẤN PHASE 3 (50 SUẤT)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full border-t border-white/5 py-12 px-6 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col items-center gap-6 text-center">
+            <div class="w-12 h-1 bg-gradient-to-r from-cyan-500 to-accent rounded-full"></div>
+            <div class="text-slate-500 text-sm font-medium tracking-wide">
+                BÁO CÁO ĐƯỢC TẠO BỞI AI MARKETING AGENT
+            </div>
+            <div class="space-y-1">
+                <p class="text-slate-400 font-bold uppercase tracking-widest">AI MARKETING &copy; 2024</p>
+                <p class="text-xs text-slate-600">Document Reference ID: AIM-V500-2026-0305</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll reveal implementation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
